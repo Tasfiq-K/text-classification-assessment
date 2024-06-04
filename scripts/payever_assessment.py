@@ -9,7 +9,7 @@ Original file is located at
 # PYTHON Version
 """
 
-!python --version
+# !python --version
 
 """**YOUR RESULT MAY VARY WHEN YOU RUN IT ON YOUR DEVICE**
 
@@ -145,7 +145,7 @@ def generate_product_data():
 # Commented out IPython magic to ensure Python compatibility.
 # ## Generate the dataset ##
 # %%time
-# data = [generate_product_data() for _ in range(2000)]
+data = [generate_product_data() for _ in range(2000)]
 
 df = pd.DataFrame(data)
 
@@ -261,7 +261,7 @@ model = tf.keras.Sequential([
   layers.Dense(8, activation='relu'),
   layers.Dense(1, activation='sigmoid')])
 
-model.summary()
+print(model.summary())
 
 """Not a big model, only has **3617** parameters"""
 
@@ -289,7 +289,7 @@ print("Accuracy: ", accuracy)
 import matplotlib.pyplot as plt
 
 history_dict = history.history
-history_dict.keys()
+print(history_dict.keys())
 
 acc = history_dict['accuracy']
 val_acc = history_dict['val_accuracy']
@@ -335,7 +335,7 @@ model_1 = tf.keras.Sequential([
   layers.Dense(8, activation='relu'),
   layers.Dense(1, activation='sigmoid')])
 
-model_1.summary()
+print(model_1.summary())
 
 model_1.compile(loss=losses.BinaryCrossentropy(),
               optimizer='adam',
@@ -359,7 +359,7 @@ print("Loss: ", loss)
 print("Accuracy: ", accuracy)
 
 history_dict_1 = history_1.history
-history_dict_1.keys()
+print(history_dict_1.keys())
 
 acc = history_dict_1['accuracy']
 val_acc = history_dict_1['val_accuracy']
