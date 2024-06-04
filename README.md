@@ -1,4 +1,6 @@
-This Text Classification Assessment consists of a `notebook` directory where the noteobook file for this assessment is kept. There is also a `py` file which is `.py` format of the notebook or the `ipynb` file.
+This Text Classification Assessment consists of a `notebook` directory where the noteobook file for this assessment is kept. There is also a `py` file which is `.py` format of the notebook or the `ipynb` file. 
+
+The `screenshots` directory contains the different output images. Such as, the **loss**, **accuracy** information while training as well as the **Accuracy** and **Loss** plots over the 100 epochs.
 
 Notebook environment: Google Colab
 PYTHON VERSION: `3.10.12`
